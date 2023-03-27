@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Videos Downloader</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="loading">
+      <img src="./loading.webp" alt="loading">
+    </div>
+    <header class="flex">
+      <h1>All Videos Downloader</h1>
+    </header>
+
+    <div class="links">
+      <button class="pages-links">
+        <a href="./index.html">Videos Downloader</a>
+      </button>
+      <button class="pages-links">
+        <a href="./instagram-downloader.html">Reels Downloader</a>
+      </button>
+    </div>
+
+    <div class="card flex">
+      <div class="card flex">
+        <div class="image--container flex"></div>
+        <div class="title--container"><p id="video-title"></p></div>
+      </div>
+      <div id="middle" class="select"></div>
+    </div>
+
+    <div class="form flex">
+      <input id="input--text" placeholder="Paste Video link here" type="text" />
+      <button onclick="getVideo()" type="submit">Get Video</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

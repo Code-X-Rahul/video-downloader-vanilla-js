@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div class="loading">
+    <img src="./loading.webp" alt="loading">
+  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Videos Downloader</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="flex">
+      <h1>All Videos Downloader</h1>
+    </header>
+
+    <div class=" card flex">
+      <div class="card flex">
+        <div class="image--container flex"></div>
+        <div class="title--container"><p id="video-title"></p></div>
+      </div>
+    </div>
+
+    <div class="form flex">
+      <input id="input--text" placeholder="Paste Video link here" type="text" />
+      <button onclick="getVideo()" type="submit">Get Video</button>
+    </div>
+    <script src="./instagram.js"></script>
+  </body>
+</html>
